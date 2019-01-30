@@ -5,7 +5,7 @@ $custom_widget_modal = Olabs\Widgets\Models\ReportWidget::where('id', $custom_wi
 
 if($custom_widget_modal) {
 
-    eval("?>".$custom_widget_modal->content."<?php");
+    eval("?>".$custom_widget_modal->content."<?");
 } else {
 ?>
 <div class="report-widget widget-welcome">
